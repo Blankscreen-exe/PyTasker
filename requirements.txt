@@ -1,0 +1,15 @@
+Flask
+python-dotenv
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-WTF
+Flask-Login
+Flask-Mail
+Flask-JWT-Extended
+Flask-Admin
+Flask-Cors
+Flask-DebugToolbar
+Flask-Limiter
+email-validator
+pytest
+redis
