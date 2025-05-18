@@ -31,9 +31,14 @@ def create_app(config_name='development'):
     CORS(app)
     limiter.init_app(app)
     toolbar.init_app(app)
-
-    # Register routes or blueprints (we’ll replace this with real blueprints later)
+    
+    from app import models
+    
+    # Register routes or blueprints
     from .routes import index_bp
     app.register_blueprint(index_bp)
+    
+    from app.auth import auth_bp
+    app.register_blueprint(auth_bp)
 
     return app
